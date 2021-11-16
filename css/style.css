@@ -8,3 +8,82 @@
     padding:0;
     font-family: 'Raleway', sans-serif;    
 }
+
+body{
+    background-image: url('/ressources/images/booki_desktop.png');
+}
+
+.row>.col-1 {
+    width: 8.33333%;
+}
+
+.row>.col-2 {
+    width: 16.66667%;
+}
+
+.row>.col-3 {
+    width: 25%;
+}
+
+.row>.col-4 {
+    width: 33.33333%;
+}
+
+.row>.col-5 {
+    width: 41.66667%;
+    margin-left: 5%;
+}
+
+.row>.col-6 {
+    width: 50%;
+}
+
+.row>.col-7 {
+    width: 58.33333%;
+}
+
+.row>.col-8 {
+    width: 66.66667%;
+}
+
+.row>.col-9 {
+    width: 75%;
+}
+
+.row>.col-10 {
+    width: 83.33333%;
+}
+
+.row>.col-11 {
+    width: 91.66667%;
+}
+
+.row>.col-12 {
+    width: 100%;
+    text-align: center;
+}
+
+.row {
+    margin-top: 0;
+    margin-left: -1.5em;
+}
+
+
+/* pour les smartphones */
+@media all and (max-device-width: 480px)
+{
+
+}
+
+/* pour les tablettes */
+@media all and (max-width: 991px)
+{
+
+}
+
+
+/* pour les ordinateurs */
+@media all and (min-width: 992px)
+{
+
+}
