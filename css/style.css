@@ -8,70 +8,164 @@
     padding:0;
     font-family: 'Raleway', sans-serif;    
 }
-
+/*
 body{
     background-image: url('/ressources/images/booki_desktop.png');
 }
+*/
+:root {
+    --blue: #0065FC;
+    --blue-light: #DEEBFF;
+    --grey:#F2F2F2;
+    --dk-grey: #d9d9d9;
+  }
+  
 
-.row>.col-1 {
+.blue{
+    color: var(--blue);
+}
+.dk-grey{
+    color: var(--dk-grey);
+}
+
+
+#bloc_page
+{
+    width: 1785px;
+    margin: auto;
+}
+
+.col-1 {
     width: 8.33333%;
 }
-
-.row>.col-2 {
+.col-2 {
     width: 16.66667%;
 }
-
-.row>.col-3 {
+.col-3 {
     width: 25%;
 }
-
-.row>.col-4 {
+.col-4 {
     width: 33.33333%;
 }
-
-.row>.col-5 {
-    width: 41.66667%;
-    margin-left: 5%;
+.col-5 {
+    width: 41.66667%;   
 }
-
-.row>.col-6 {
+.col-6 {
     width: 50%;
 }
-
-.row>.col-7 {
+.col-7 {
     width: 58.33333%;
 }
-
-.row>.col-8 {
+.col-8 {
     width: 66.66667%;
 }
-
-.row>.col-9 {
+.col-9 {
     width: 75%;
 }
-
-.row>.col-10 {
+.col-10 {
     width: 83.33333%;
 }
-
-.row>.col-11 {
+.col-11 {
     width: 91.66667%;
 }
-
-.row>.col-12 {
-    width: 100%;
-    text-align: center;
+.col-12 {
+    width: 100%;   
 }
 
-.row {
-    margin-top: 0;
-    margin-left: -1.5em;
+.row{
+    display: flex;        
+    flex-wrap: wrap;  
 }
 
+.container {
+    background-color: var(--grey);    
+    border-radius: 20px;
+}
+
+.container-fluid{
+    background-color: var(--grey);
+    margin:0px;
+}
+
+/* header css */
+header {    
+    margin-top: 0;  
+    display: flex;        
+    flex-wrap: wrap;    
+    align-items: center;
+    box-sizing: border-box;
+}  
+
+header li{
+    display:inline;
+}
+
+li a{
+    color:black;
+    text-decoration: none;    
+}
+
+li a:hover {
+    color: grey;
+  }
+
+.logo{
+    transform: scale(0.7);
+}
+
+/* section recherche  css */
+.search {
+    background-color: var(--blue);
+    color: white;    
+    padding: 5px;
+  }
+
+  /*section hébergement css */
+
+.card {
+display: block;
+background-color: #ffff;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 30%;
+margin: auto;
+border-radius: 5%;
+border: 5px #ffff solid;
+
+}
+.img-box{
+    border-radius:15px  15px 0px 0px ;
+}
+
+aside{
+   
+    flex-direction: column;
+}
+
+
+  /* footer css */
+footer{
+    margin-top: 0;  
+    display: flex;        
+    flex-wrap: wrap;     
+    box-sizing: border-box;
+}
+
+footer li{
+    list-style-type: none; /* Remove bullets */
+}
 
 /* pour les smartphones */
-@media all and (max-device-width: 480px)
+@media all and (max-width: 767px)
 {
+    header {                
+        flex-direction: column;
+        justify-content: center;       
+    } 
+    
+    footer{
+        flex-direction: column;        
+    }
+
 
 }
 
@@ -85,5 +179,12 @@ body{
 /* pour les ordinateurs */
 @media all and (min-width: 992px)
 {
+    header {
+        justify-content: space-between;
+        flex-wrap: wrap;    
+    }
 
+    footer{
+        align-items: center;
+    }  
 }
