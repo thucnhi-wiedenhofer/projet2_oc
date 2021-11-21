@@ -6,13 +6,17 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    font-family: 'Raleway', sans-serif;    
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px; 
+    font-weight: 450; 
+    line-height: 1.2;  
+    
 }
-/*
+
 body{
     background-image: url('/ressources/images/booki_desktop.png');
 }
-*/
+
 :root {
     --blue: #0065FC;
     --blue-light: #DEEBFF;
@@ -29,47 +33,30 @@ body{
 }
 
 
-#bloc_page
+#bloc
 {
-    width: 1785px;
-    margin: auto;
+    width: 96.5vw;    
+    padding-left: 3.5vw;
+    padding-top: 1.5vh;
 }
 
-.col-1 {
-    width: 8.33333%;
+h1 {
+    font-size: 3vh;
+    font-weight: 700;
+    line-height: 0.4;    
+    
 }
-.col-2 {
-    width: 16.66667%;
+  
+h2 {
+    font-size: 3vh;
+    font-weight: 700;
+    
 }
-.col-3 {
-    width: 25%;
-}
-.col-4 {
-    width: 33.33333%;
-}
-.col-5 {
-    width: 41.66667%;   
-}
-.col-6 {
-    width: 50%;
-}
-.col-7 {
-    width: 58.33333%;
-}
-.col-8 {
-    width: 66.66667%;
-}
-.col-9 {
-    width: 75%;
-}
-.col-10 {
-    width: 83.33333%;
-}
-.col-11 {
-    width: 91.66667%;
-}
-.col-12 {
-    width: 100%;   
+  
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 .row{
@@ -77,43 +64,54 @@ body{
     flex-wrap: wrap;  
 }
 
+
 .container {
     background-color: var(--grey);    
     border-radius: 20px;
-}
-
-.container-fluid{
-    background-color: var(--grey);
-    margin:0px;
+    padding: 30px;
 }
 
 /* header css */
 header {    
     margin-top: 0;  
     display: flex;        
-    flex-wrap: wrap;    
-    align-items: center;
+    flex-wrap: wrap;      
     box-sizing: border-box;
 }  
-
+.navbar{
+    padding-top: 6.7vh;
+    padding-right: 2.5vw;
+}
 header li{
     display:inline;
+    
+    padding: 1.9vw;
+    margin-left: 0.7vw;
 }
 
 li a{
     color:black;
-    text-decoration: none;    
+    text-decoration: none;  
+  
 }
 
 li a:hover {
-    color: grey;
+    color: var(--blue);
+   
+    border-top: 4px var(--blue) solid;
+    padding-top: 6.3vh;
   }
 
 .logo{
-    transform: scale(0.7);
+    transform: scale(0.68);
+    padding-top:5.5vh;
+    padding-right: 20vw;
 }
 
 /* section recherche  css */
+#recherche{
+    padding-left: 0.35vw;
+}
 .search {
     background-color: var(--blue);
     color: white;    
@@ -125,21 +123,40 @@ li a:hover {
 .card {
 display: block;
 background-color: #ffff;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.048);
 max-width: 30%;
-margin: auto;
-border-radius: 5%;
+margin:;
+border-radius: 20px;
 border: 5px #ffff solid;
 
 }
-.img-box{
-    border-radius:15px  15px 0px 0px ;
+.img-top{
+    border-radius: 20px 20px 0px 0px ;
+    
 }
 
-aside{
-   
-    flex-direction: column;
+/*section popular css */
+#popular{   
+    justify-content: space-between;
 }
+
+aside .card{
+    display: flex;
+    background-color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.048);
+    max-width: 100%;    
+    margin: auto;
+    border-radius: 20px;
+    border: 5px #ffff solid;  
+}
+
+.img-left{
+    border-radius: 20px 0px 0px 20px ;
+    
+}
+
+/*section hébergement css */
+
 
 
   /* footer css */
@@ -148,7 +165,10 @@ footer{
     display: flex;        
     flex-wrap: wrap;     
     box-sizing: border-box;
+    background-color: var(--grey);
+    padding-left: 3%;  
 }
+
 
 footer li{
     list-style-type: none; /* Remove bullets */
@@ -159,11 +179,13 @@ footer li{
 {
     header {                
         flex-direction: column;
-        justify-content: center;       
+        text-align: center; 
+        
     } 
     
     footer{
-        flex-direction: column;        
+        flex-direction: column; 
+        width: 100%;       
     }
 
 
