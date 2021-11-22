@@ -77,35 +77,26 @@ header {
     display: flex;        
     flex-wrap: wrap;      
     box-sizing: border-box;
+             
 }  
+
 .navbar{
-    padding-top: 2.8vh;
-    width:24vw;
-}
-ul {
+    width:23.3vw;
     margin:0;
-    display: flex;
-    flex-direction: row;
-}
-header li{
-    list-style: none;
-    flex-grow:1;
-    flex-basis: 0;
-    padding: 1.9vw;
-    margin-left: 0.7vw;
+    display: flex;      
 }
 
-li a{
+ a{
+    padding-top: 6.6vh;
     color:black;
     text-decoration: none;
-  
+    flex-grow: 1;
+    flex-basis: 0;   
+    text-align: center;
+    font-size: 21.3px; 
+    font-weight: 450;
 }
 
-li a:hover {
-    color: var(--blue);   
-    border-top: 4px var(--blue) solid;
-    padding-top: 6.3vh;
-}
 
 .logo{
     transform: scale(0.68);
@@ -130,7 +121,6 @@ display: block;
 background-color: #ffff;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.048);
 max-width: 30%;
-margin:;
 border-radius: 20px;
 border: 5px #ffff solid;
 
@@ -171,7 +161,8 @@ footer{
     flex-wrap: wrap;     
     box-sizing: border-box;
     background-color: var(--grey);
-    padding-left: 3%;  
+    padding-left: 3%;
+    align-items: center;
 }
 
 
@@ -179,14 +170,55 @@ footer li{
     list-style-type: none; /* Remove bullets */
 }
 
+/* pour les ordinateurs */
+@media all and (min-width: 992px)
+{
+   header{
+    justify-content: space-between;
+   } 
+   
+   a:hover{
+    color: var(--blue);   
+    border-top: 4px var(--blue) solid;
+    padding-top: 6.3vh;    
+    }
+}
+
+
+/* pour les tablettes */
+@media all and (max-width: 1024px)
+{
+    header{
+        justify-content: space-evenly;        
+    }
+    .navbar {
+        width:50%;
+    }
+   
+}
+
+
 /* pour les smartphones */
 @media all and (max-width: 767px)
 {
     header {                
         flex-direction: column;
-        text-align: center; 
-        
+        text-align: center;         
     } 
+
+    .navbar {
+        width:100%;
+        
+    }
+
+    .navbar a{
+        border-bottom: 4px var(--dk-grey) solid;
+    }
+    .navbar a:hover{
+        color: var(--blue);   
+        border-bottom: 4px var(--blue) solid;
+        padding-bottom: 6.3vh;        
+    }
     
     footer{
         flex-direction: column; 
@@ -196,22 +228,5 @@ footer li{
 
 }
 
-/* pour les tablettes */
-@media all and (max-width: 991px)
-{
-
-}
 
 
-/* pour les ordinateurs */
-@media all and (min-width: 992px)
-{
-    header {
-        justify-content: space-between;
-        flex-wrap: wrap;    
-    }
-
-    footer{
-        align-items: center;
-    }  
-}
