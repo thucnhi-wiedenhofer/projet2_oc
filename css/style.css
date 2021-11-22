@@ -43,25 +43,25 @@ body{
 h1 {
     font-size: 3vh;
     font-weight: 700;
-    line-height: 0.4;    
-    
+    line-height: 0.4; 
 }
   
 h2 {
     font-size: 3vh;
     font-weight: 700;
-    
-}
-  
-h3 {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.2;
+    line-height: 0.4;    
 }
 
-.row{
-    display: flex;        
-    flex-wrap: wrap;  
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+  
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 
@@ -106,13 +106,69 @@ header {
 
 /* section recherche  css */
 #recherche{
-    padding-left: 0.35vw;
+    padding-left: 0.35vw;    
 }
-.search {
+
+input, button{
+    font-size: 2.4vh;
+    font-weight: 700;    
+}
+
+.form-group{
+    display:flex;
+    align-items: center;
+    margin-top: 2.7vh;
+    margin-bottom: 6vh;    
+}
+
+#here {
+    background-color: var(--dk-grey);
+    color: black;
+    border-radius:  18px 0 0 18px;       
+    padding: 20px;
+    position: relative;
+    left: 5px;
+    outline: none;
+    border: none;
+}
+
+
+.search input{
+    padding: 20px;
+    width: 16.6vw;
+    border-top: 1px solid var(--gray);
+    border-right: none;
+    border-bottom: 1px solid var(--gray);
+    border-left: none;   
+}
+
+.search ::placeholder{
+  color: black;  
+}
+
+#bouton {
     background-color: var(--blue);
+    border-radius: 0 20px 20px 0;
     color: white;    
-    padding: 5px;
+    padding: 20px;
+    position: relative;
+    right:5px;
+    outline: none;
+    border: none;
+    width: 9.2vw;
   }
+
+.info{
+    padding-top: 7vh;;
+    display: flex;        
+    flex-wrap: wrap;  
+    align-items: center;    
+}
+
+.info p{
+    padding-left: 30px;
+}
+
 
   /*section hébergement css */
 

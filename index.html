@@ -31,13 +31,13 @@
             <h1 >Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
-            <div class="form-group">
-                <div class="input-group">
-                  <span class=""><i class="fas fa-map-marker-alt"></i></span>                 
-                  <input type="text" class="form-control" placeholder="Ville, Pays" aria-label="Ville, Pays">
-                  <button class="search" type="button">Rechercher</button>
+            <form action="#" class="form-group">
+                <div class="search">                  
+                  <button id="here" type="submit" disabled><i class="fas fa-map-marker-alt"></i></button>               
+                  <input type="text" class="form-control" placeholder="Marseille, France" aria-label="Ville, Pays">
+                  <button  id= "bouton" type="submit">Rechercher</button>
                 </div>
-            </div>
+            </form>
 
             <div class="filter">
                 <button type="button" class="btn position-relative">
@@ -66,8 +66,8 @@
                 </button>
             </div>
 
-            <div class="row">
-                <i class="fas fa-info-circle"></i>
+            <div class="info">
+                <i class="fas fa-info-circle blue"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
