@@ -8,8 +8,7 @@
     padding:0;
     font-family: 'Raleway', sans-serif;
     font-size: 21px; 
-    font-weight: 450; 
-    line-height: 1.2;  
+    font-weight: 450;    
     
 }
 
@@ -36,32 +35,30 @@ body{
 #bloc
 {
     width: 96.5vw;    
-    padding-left: 3.5vw;
-    padding-top: 1.5vh;
+    padding-left: 3.5vw; 
+    padding-top: 1.4vh;   
 }
 
 h1 {
     font-size: 3vh;
     font-weight: 700;
-    line-height: 0.4; 
 }
   
 h2 {
     font-size: 3vh;
     font-weight: 700;
-    line-height: 0.4;    
 }
 
 h3 {
     font-size: 20px;
     font-weight: 700;
-    line-height: 1.2;
+    
 }
   
 h4 {
     font-size: 20px;
     font-weight: 700;
-    line-height: 1.2;
+    
 }
 
 
@@ -116,8 +113,8 @@ input, button{
 
 .form-group{
     display:flex;
-    align-items: center;
-    margin-top: 2.7vh;
+    align-items: center;    
+    margin-top: 3vh;
     margin-bottom: 6vh;    
 }
 
@@ -134,8 +131,8 @@ input, button{
 
 
 .search input{
+    
     padding: 20px;
-    width: 16.6vw;
     border-top: 1px solid var(--gray);
     border-right: none;
     border-bottom: 1px solid var(--gray);
@@ -155,7 +152,7 @@ input, button{
     right:5px;
     outline: none;
     border: none;
-    width: 9.2vw;
+    
   }
 
 .info{
@@ -229,6 +226,10 @@ footer li{
 /* pour les ordinateurs */
 @media all and (min-width: 992px)
 {
+    h1{
+        line-height: 0.4;
+    }
+
    header{
     justify-content: space-between;
    } 
@@ -238,6 +239,17 @@ footer li{
     border-top: 4px var(--blue) solid;
     padding-top: 6.3vh;    
     }
+
+    .search input{
+        width: 16.6vw;
+    }
+    #bouton{
+        width: 9.2vw;
+    }
+
+    #search-icon{
+        display: none;
+     }
 }
 
 
@@ -250,6 +262,9 @@ footer li{
     .navbar {
         width:50%;
     }
+    #search-word{
+        display: none;
+     }
    
 }
 
@@ -263,8 +278,7 @@ footer li{
     } 
 
     .navbar {
-        width:100%;
-        
+        width:100%;        
     }
 
     .navbar a{
@@ -274,6 +288,21 @@ footer li{
         color: var(--blue);   
         border-bottom: 4px var(--blue) solid;
         padding-bottom: 6.3vh;        
+    }
+
+    .search input{
+        z-index: 1;
+    }
+
+    #bouton{
+        border-radius: 20px;
+        position: absolute;
+        right: 20px;
+        z-index:2;
+    }
+
+    #search-word{
+       display: none;      
     }
     
     footer{
