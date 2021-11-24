@@ -156,10 +156,14 @@ input, button, span{
   
   /* Filtres css */
 #filtres{
-    padding-left: 0.5vw;    
-    
+    padding-left: 0.5vw;  
   }
 
+.row{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;       
+}
 
 .btn{
     border: 2px solid var(--dk-grey);
@@ -182,9 +186,7 @@ input, button, span{
 
   .round-icon{
     position: absolute;
-    z-index: 2; 
-    top: 38.5vh;
-     
+    z-index: 2;         
     padding: 20px;
     border: none;
     border-radius: 50px;
@@ -193,9 +195,7 @@ input, button, span{
 
 .info{
     padding-top: 5vh;;
-    display: flex;        
-    flex-wrap: wrap;  
-    align-items: center;    
+    display: flex; 
 }
 
 .info p{
@@ -282,16 +282,6 @@ footer li{
     padding-top: 6.3vh;    
     }
 
-    #filtres{
-        padding-left: 0.5vw;    
-        display: flex;
-        align-items: center;    
-        flex-wrap: wrap;
-      }
-    
-    .filter{
-        padding: 0px 20px;    
-    }
     .search input{
         width: 16.6vw;
     }
@@ -302,6 +292,26 @@ footer li{
     #search-icon{
         display: none;
      }
+     
+    #filtres{
+        padding-left: 0.5vw;    
+        display: flex;
+        align-items: center;    
+        flex-wrap: wrap;
+    }
+    
+    .filter{
+        padding: 0px 20px;    
+    }
+
+    .round-icon{
+        top: 38.5vh; 
+    }
+
+    .info{
+        flex-wrap: wrap;  
+        align-items: center; 
+    }
 }
 
 
@@ -318,6 +328,9 @@ footer li{
         display: none;
      }
    
+    .filter{
+        margin:5px;
+    }
 }
 
 
@@ -340,12 +353,16 @@ footer li{
     } 
 
     p{
-        font-size: 18px;
+        font-size: 16px;
     }
 
-    input, button, span{
+    input, span{
         font-size: 2.5vh;
         font-weight: 900;    
+    }
+    button{
+        font-size: 16px;
+        font-weight: 900;
     }
 
     header {                
@@ -360,6 +377,7 @@ footer li{
     .navbar a{
         border-bottom: 4px var(--dk-grey) solid;
     }
+
     .navbar a:hover{
         color: var(--blue);   
         border-bottom: 4px var(--blue) solid;
@@ -371,28 +389,15 @@ footer li{
         width: 100vw;    
         padding: 20px;         
     }
-    
-    #filtres{
-        justify-content: start;
-    }
-
-    .filter{
-        display: flex;
         
-    }
-    
-
-    .round-icon{
-        position: ;
-    }
-
     #here{
-        position: absolute;        
+        position: absolute;
+        left: 20px;       
     }
 
     .search input{
         position: relative;
-        left: 48px;
+        left: 55px;
         padding: 20px;
         z-index: 1;
     }
@@ -409,6 +414,29 @@ footer li{
        display: none;      
     }
     
+    .row{
+        justify-content: space-between;          
+    }    
+
+    .filter{
+        margin:3px;
+    }
+
+    .round-icon{
+         
+        padding: 15px;
+    }
+        
+    .btn{
+        border: 2px solid var(--dk-grey);
+        border-radius: 40px;
+        padding:15px 15px 15px 60px;
+    }
+
+    .info p{
+        padding-left: 5px;
+    }
+
     footer{
         flex-direction: column; 
         width: 100%;       
