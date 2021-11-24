@@ -53,13 +53,7 @@ h3 {
     font-size: 20px;
     font-weight: 700;
     
-}
-  
-h4 {
-    font-size: 20px;
-    font-weight: 700;
-    
-}
+} 
 
 
 .container {
@@ -106,8 +100,8 @@ header {
     padding-left: 0.35vw;    
 }
 
-input, button{
-    font-size: 2.4vh;
+input, button, span{
+    font-size: 2.5vh;
     font-weight: 700;    
 }
 
@@ -115,7 +109,7 @@ input, button{
     display:flex;
     align-items: center;    
     margin-top: 3vh;
-    margin-bottom: 6vh;    
+    margin-bottom: 4.2vh;    
 }
 
 #here {
@@ -130,13 +124,13 @@ input, button{
 }
 
 
-.search input{
-    
-    padding: 20px;
-    border-top: 1px solid var(--gray);
+.search input{    
+    padding: 18px 27px ;
+    border-top: 2px solid var(--dk-grey);
     border-right: none;
-    border-bottom: 1px solid var(--gray);
-    border-left: none;   
+    border-bottom: 2px solid var(--dk-grey);
+    border-left: none;
+    
 }
 
 .search ::placeholder{
@@ -152,20 +146,68 @@ input, button{
     right:5px;
     outline: none;
     border: none;
+    cursor: pointer;    
+  }
+
+  #bouton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.308), 0 17px 50px 0 rgba(0, 0, 0, 0.349);
+    opacity: 0.8;
+  } 
+  
+  /* Filtres css */
+#filtres{
+    padding-left: 0.5vw;    
     
   }
 
+
+.btn{
+    border: 2px solid var(--dk-grey);
+    border-radius: 40px;
+    padding:18px 25px 18px 80px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    background-color: transparent;
+  }
+
+ 
+.btn:hover {
+    background-color:var(--blue);
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.171), 0 17px 50px 0 rgba(0, 0, 0, 0.199);
+    opacity: 0.8;
+  }
+
+  .round-icon{
+    position: absolute;
+    z-index: 2; 
+    top: 38.5vh;
+     
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--blue-light);
+  }
+
 .info{
-    padding-top: 7vh;;
+    padding-top: 5vh;;
     display: flex;        
     flex-wrap: wrap;  
     align-items: center;    
 }
 
 .info p{
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
+.fa-info-circle{
+    background-color:var(--blue);
+    color:white;
+    border: 3px var(--dk-grey) solid;
+    border-radius: 50%;
+}
 
   /*section hébergement css */
 
@@ -240,6 +282,16 @@ footer li{
     padding-top: 6.3vh;    
     }
 
+    #filtres{
+        padding-left: 0.5vw;    
+        display: flex;
+        align-items: center;    
+        flex-wrap: wrap;
+      }
+    
+    .filter{
+        padding: 0px 20px;    
+    }
     .search input{
         width: 16.6vw;
     }
@@ -272,6 +324,30 @@ footer li{
 /* pour les smartphones */
 @media all and (max-width: 767px)
 {
+    h1 {
+        font-size: 3.7vh;
+        font-weight: 700;
+    }
+      
+    h2 {
+        font-size: 3.7vh;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-size: 20px;
+        font-weight: 700;        
+    } 
+
+    p{
+        font-size: 18px;
+    }
+
+    input, button, span{
+        font-size: 2.5vh;
+        font-weight: 900;    
+    }
+
     header {                
         flex-direction: column;
         text-align: center;         
@@ -290,15 +366,43 @@ footer li{
         padding-bottom: 6.3vh;        
     }
 
+    #bloc
+    {
+        width: 100vw;    
+        padding: 20px;         
+    }
+    
+    #filtres{
+        justify-content: start;
+    }
+
+    .filter{
+        display: flex;
+        
+    }
+    
+
+    .round-icon{
+        position: ;
+    }
+
+    #here{
+        position: absolute;        
+    }
+
     .search input{
+        position: relative;
+        left: 48px;
+        padding: 20px;
         z-index: 1;
     }
 
     #bouton{
         border-radius: 20px;
         position: absolute;
-        right: 20px;
+        right: 40px;
         z-index:2;
+        font-size: 10px;
     }
 
     #search-word{
