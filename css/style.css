@@ -42,8 +42,8 @@ h2 {
     font-weight: 700;
 }
 
-h3 {
-    font-size: 22px;
+h4 {
+    font-size: 21.4px;
     font-weight: 700;    
 } 
 
@@ -98,7 +98,7 @@ a{
     padding-top: 1.4vh;   
 }
 
-input, button, span, h4{
+input, button, span, h3{
     font-size: 24px;
     font-weight: 700;    
 }
@@ -213,7 +213,8 @@ input, button, span, h4{
 
 #hebergements{
     justify-content: space-between;
-    width: 96.5vw;    
+    width: 96.5vw; 
+    margin-bottom: 2.9%;  
 }
 
 #hebergements p{
@@ -232,7 +233,7 @@ input, button, span, h4{
     justify-content: space-between;
 }
 
-#main h4{
+#main h3{
     margin-top: 3.7%;
     margin-left: 0.4%;
 }
@@ -274,8 +275,8 @@ cursor: pointer;
     object-fit: cover;
    }
 
-.contain{
-    width: 1000px;
+.cal{
+    height: 803px;
     object-fit: none;
 }
   
@@ -295,7 +296,11 @@ cursor: pointer;
 aside{
     width:30.2%;
     min-width: 400px;
-     /* background-color: var(--grey);  */  
+    /*background-color: var(--grey); */
+    padding-left: 2.9%;
+    padding-top: 2.8%;
+    padding-right: 2.9%;
+    margin-top: 2.9%;   
 }
 
 #popular{   
@@ -328,15 +333,19 @@ aside{
     height: 180px;    
     overflow: hidden;   
 }
-.left{   
-    object-position: 50% 48%;
+
+.soleil{
+    height: 185px;
+    width: 185px;
+    object-position: 58% 50%;
 }
 
-.right{
-    height: 100%;
-    width: 100%;
-    object-position: 48% 50%;
+.coeur{
+    height: 190px;
+    width: 185px;
+    object-position: 65% 50%;
 }
+
 .none{
     object-fit: none;
 }
@@ -391,30 +400,36 @@ aside{
 
 .card{
     display: block;
-    background-color: #ffff;
+    background-color:  #ffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.048);    
     border-radius: 20px; 
     cursor: pointer;    
     width: 400px;    
 }
 
-.xtall{
-    height: 592px;
-    
+.card:hover {     
+    filter: grayscale(1);
+    box-shadow:  0 4px 16px 0 rgba(0, 0, 0, 0.699);
 }
 
-.tall{
-    height: 314px;
-}
+
+
 .xsmall{
     height: 216px;    
 }
 .small{
-    height: 258px;
-    
+    height: 258px;    
+}
+.dame{
+    height: 185px;
+    object-position: 50% 0%;
 }
 .middle{
     height: 274px;
+}
+.parc{
+    height: 200px;
+    object-position: 50% 14%;
 }
 
 .x-tall{
@@ -422,24 +437,59 @@ aside{
 }
 
 .top{
-    object-position: 50% 20% ;
+    height: 590px;
+    object-position: 50% 39% ;
 }
+
+.x-small{
+    height: 145px;
+    object-position: 50% 19% ;
+}
+
+.xtall h4{
+    margin: 6.5%;
+}
+
+.xsmall h4{
+    margin: 5.5%;
+}
+
+.small h4,
+.tall h4,
+.middle h4{
+    margin-top: 7.5%;
+    margin-left: 6%;
+}
+
 
   /* footer css */
-footer{
-     
+footer{ 
+    width: 100%;    
     display: flex;        
-    flex-wrap: wrap;     
-    box-sizing: border-box;
+    flex-wrap: wrap; 
+    justify-content: space-between;   
     background-color: var(--grey);
-    padding-left: 3%;
-    margin-top: 3%;
-    align-items: center;
+    padding: 3.5%;
+    margin-top: 3%;       
 }
 
+.menu{
+    width:32%;
+}
+
+
+.menu h3{
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
 
 footer li{
     list-style-type: none; /* Remove bullets */
+    padding-top: 3.3%;    
+}
+
+.menu a{
+    font-size: 21px;
 }
 
 /* pour les ordinateurs */
@@ -495,12 +545,11 @@ footer li{
         flex-wrap: wrap;  
         align-items: center; 
     }
-
-    .container {  
+    #main{
         padding: 2.9%;
         margin-top: 2.9%;
     }
-
+    
     .radius{    
         border-radius: 25px;
     }
@@ -509,12 +558,83 @@ footer li{
     margin-bottom: 10%;  
     }
 
-    .position{
-        height: 500px;
-        object-position: left;
+    .xtall{
+        height: 592px;        
+    }
     
+    .tall{
+        height: 314px;
+    }
+    
+    .fort{
+        height: 240px;
+        object-position: 50% 39% ;
     }
 
+    .x-tall{
+        height: 520px;
+    }
+    
+    .top{
+        height: 590px;
+        object-position: 50% 39% ;
+    }
+    
+    .x-small{
+        height: 145px;
+        object-position: 50% 19% ;
+    }
+
+    
+    .xsmall{
+        height: 216px;    
+    }
+    .small{
+        height: 258px;    
+    }
+    .dame{
+        height: 185px;
+        object-position: 50% 0%;
+    }
+    .middle{
+        height: 274px;
+    }
+    .parc{
+        height: 200px;
+        object-position: 50% 14%;
+    }
+
+    .x-tall{
+        height: 520px;
+    }
+
+    .top{
+        height: 590px;
+        object-position: 50% 39% ;
+    }
+
+    .x-small{
+        height: 145px;
+        object-position: 50% 19% ;
+    }
+
+    .xtall h4{
+        margin: 6.5%;
+    }
+
+    .xsmall h4{
+        margin: 5.5%;
+    }
+
+    .far{
+        padding-top: 2px;
+        padding-left: 7px;
+    }
+    
+    .far li{
+        padding-top: 4%;
+    }
+    
 }
 
 
@@ -547,7 +667,7 @@ footer li{
         width: 100%;
     }
     
-    .container {  
+    #main, aside{  
         padding: 2%;
         margin-top: 2%;
     }
@@ -563,6 +683,27 @@ footer li{
         max-width: 350px;
         min-width: 200px;
         margin-top: 3%;
+    }
+
+    #activite-1,
+    #activite-2{
+        width: 70%;
+        margin: 0% 20%;
+    }
+    .card{
+        margin:5%;
+    }
+
+    .fort{
+        height: 250px;
+    }
+    .tall h4{
+        margin: 5%;
+    }
+
+    .far{
+        padding-top: 2px;
+        padding-left: 12px;
     }
 }
 
@@ -580,7 +721,7 @@ footer li{
         font-weight: 700;
     }
     
-    h3 {
+    h4 {
         font-size: 20px;
         font-weight: 700;        
     } 
@@ -678,7 +819,8 @@ footer li{
     #main:nth-child(1)
     {
         order: 2; 
-        width: 90%;       
+        width: 100%;   
+        margin: auto;    
     }
     aside:nth-child(2)
     {
@@ -695,22 +837,25 @@ footer li{
     .card-aside{
         margin: 5%;
     }
+
     #activites{
         margin-top: 7%;
         margin-bottom: 7%;
     }
+
     #activite-1,
     #activite-2{
+        flex-direction: column;
         width: 90%;
+        margin: 3%;
     }
-    .card{
-        height: 200px;
+    .card{        
         width: 350px;
+        margin: 3%;
     }
 
-    .position{
+    
 
-    }
     footer{
         flex-direction: column; 
         justify-content: space-between;
@@ -718,7 +863,10 @@ footer li{
         width: 100%;       
     }
 
-
+    .menu{
+        width:90%;
+    }
+    
 }
 
 
