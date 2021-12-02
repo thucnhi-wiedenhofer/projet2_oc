@@ -35,6 +35,7 @@ body{
 h1 {
     font-size: 29.1px;
     font-weight: 700;
+    padding-bottom: 2px;
 }
   
 h2 {
@@ -76,12 +77,24 @@ a{
     flex-grow: 1;
     flex-basis: 0;   
     text-align: center;
-    font-size: 21.5px; 
+    font-size: 21px; 
     font-weight: 450;
 }
 
+a:hover{
+    color: var(--blue);
+}   
+
 .navbar a{
     padding-top: 6.9vh;
+}
+
+.a-left{
+    padding-left: 8px;
+}
+
+.a-right{
+    padding-right: 22px; 
 }
 
 .logo{
@@ -158,7 +171,7 @@ input, button, span, h3{
 .btn{
     border: 2px solid var(--dk-grey);
     border-radius: 50px;
-    padding:18px 25px 18px 80px;       
+    padding:18px 25px 15px 80px;       
     display:flex;
     cursor: pointer;
     transition-duration: 0.4s;
@@ -192,21 +205,24 @@ input, button, span, h3{
   }
 
 .info{
-    padding-top: 42px;
-    padding-left: 2px;
+    padding-top: 47px;
+    padding-left: 6px;
     display: flex; 
 }
 
 .info p{
-    padding-left: 16px;
+    padding-left: 18px;
 }
 
-.fa-info-circle{
+.info-icon{
     font-size: 30px;
     background-color:var(--blue);
     color:white;
     border: 2px var(--dk-grey) solid;
-    border-radius: 50%;
+    border-radius: 50%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
   /*section hébergement css */
@@ -224,8 +240,8 @@ input, button, span, h3{
 
 #main{
     /*background-color: var(--grey); */
-    width: 63.3%;    
-    margin-left: 3.5%;
+    width: 63.2%;    
+    margin-left: 3.6%;
     margin-right: 3%;
 }
 
@@ -297,10 +313,10 @@ aside{
     width:30.2%;
     min-width: 400px;
     /*background-color: var(--grey); */
-    padding-left: 2.9%;
+    padding-left: 2.8%;
     padding-top: 2.8%;
-    padding-right: 2.9%;
-    margin-top: 2.9%;   
+    padding-right: 2.8%;
+    margin-top: 3%;   
 }
 
 #popular{   
@@ -366,7 +382,7 @@ aside{
 /*section activités css */
 
 #activites{
-    padding-top: 1.5%;
+    padding-top: 1.4%;
     padding-left: 3.5vw;
     width: 96.3vw;
 }
@@ -378,7 +394,7 @@ aside{
 }
 
 #activites h2{
-    margin-bottom: 1.5%;
+    margin-bottom: 1.6%;
 }
 
 #activite-1,
@@ -503,11 +519,11 @@ footer li{
     justify-content: space-between;
    } 
    
-   a:hover{
+   .navbar a:hover{
     color: var(--blue);   
     border-top: 4px var(--blue) solid;
-    padding-top: 6.3vh;    
-    }
+    padding-top: 6.4vh;  
+    }  
 
     .search input{
         width: 16vw;
@@ -521,20 +537,20 @@ footer li{
      }
      
     #filtres{
-        padding-left: 10px;     
+        padding-left: 9px;     
         display: flex;        
         align-items: center;
         font-size: 25px;         
     }
 
     #filtres .row{
-        margin-left: 30px;
+        margin-left: 29px;
         justify-content: space-around;
-        width: 65%;
+        width: 65.4%;
     }
     
     .filter{
-        padding: 2px 0px;    
+        padding: 1.9px 0px;    
     }
 
     .round-icon{
