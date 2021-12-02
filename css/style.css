@@ -13,7 +13,7 @@
 }
 
 body{
-    background-image: url('/ressources/images/booki_desktop.png');    
+  /*  background-image: url('/ressources/images/booki_desktop.png');   */
 }
 
 :root {
@@ -106,7 +106,7 @@ a:hover{
 /* section recherche  css */
 
 #recherche{
-    padding-left: 3.85vw;  
+    padding-left: 3.8vw;  
     width: 96.5vw;
     padding-top: 1.4vh;   
 }
@@ -119,7 +119,7 @@ input, button, span, h3{
 .form-group{
     display:flex;
     align-items: center;    
-    margin-top: 3vh;
+    margin-top: 2.8vh;
     margin-bottom: 4.2vh; 
        
 }
@@ -128,16 +128,16 @@ input, button, span, h3{
     background-color: var(--grey);
     color: black;
     border-radius:  20px 0 0 20px;       
-    padding: 20px 25px;
+    padding: 20px 27px;
     position: relative;
-    left: 3.5px;
+    left: 3px;
     outline: none;
     border: none;
 }
 
 
 .search input{    
-    padding: 18px 27px ;
+    padding: 18px 10px ;
     border-top: 1px solid var(--grey);
     border-right: none;
     border-bottom: 1px solid var(--grey);
@@ -151,9 +151,9 @@ input, button, span, h3{
 
 #bouton {
     background-color: var(--blue);
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 21px 21px 0;
     color: white;    
-    padding: 20px;
+    padding: 20px 21px;
     position: relative;
     right: 6px;
     outline: none;
@@ -205,8 +205,8 @@ input, button, span, h3{
   }
 
 .info{
-    padding-top: 47px;
-    padding-left: 6px;
+    padding-top: 49px;
+    padding-left: 7px;
     display: flex; 
 }
 
@@ -228,6 +228,7 @@ input, button, span, h3{
   /*section hébergement css */
 
 #hebergements{
+    display: flex;    
     justify-content: space-between;
     width: 96.5vw; 
     margin-bottom: 2.9%;  
@@ -239,10 +240,7 @@ input, button, span, h3{
 
 
 #main{
-    /*background-color: var(--grey); */
-    width: 63.2%;    
-    margin-left: 3.6%;
-    margin-right: 3%;
+    background-color: var(--grey); 
 }
 
 #main .row{
@@ -310,9 +308,9 @@ cursor: pointer;
 /*section popular css */
 
 aside{
-    width:30.2%;
-    min-width: 400px;
-    /*background-color: var(--grey); */
+    
+    
+    background-color: var(--grey); 
     padding-left: 2.8%;
     padding-top: 2.8%;
     padding-right: 2.8%;
@@ -504,9 +502,7 @@ footer li{
     padding-top: 3.3%;    
 }
 
-.menu a{
-    font-size: 21px;
-}
+
 
 /* pour les ordinateurs */
 @media all and (min-width: 992px)
@@ -525,12 +521,7 @@ footer li{
     padding-top: 6.4vh;  
     }  
 
-    .search input{
-        width: 16vw;
-    }
-    #bouton{
-        width: 9.3vw;
-    }
+    
 
     #search-icon{
         display: none;
@@ -553,17 +544,15 @@ footer li{
         padding: 1.9px 0px;    
     }
 
-    .round-icon{
-        top: 39.9vh; 
-    }
-
     .info{
         flex-wrap: wrap;  
         align-items: center; 
     }
     #main{
         padding: 2.9%;
-        margin-top: 2.9%;
+        margin-top: 2.9%;        
+        margin-right: 3%;       
+        margin-left: 3.6%;
     }
     
     .radius{    
@@ -650,12 +639,19 @@ footer li{
     .far li{
         padding-top: 4%;
     }
+
+    .menu a{
+        font-size: 21px;
+    }
     
 }
 
 
+
+
+
 /* pour les tablettes */
-@media all and (max-width: 1024px)
+@media all and (max-width: 991px)
 {
     header{
         justify-content: space-evenly;        
@@ -671,34 +667,31 @@ footer li{
         margin:7px;
     }
 
-    #main:nth-child(1)
-    {
-        order: 2; 
-        width: 100%;       
-    }
-    aside:nth-child(2)
-    {
-        order: 1;
-        background-color: var(--grey); 
-        width: 100%;
-    }
+   #hebergements{
+       flex-direction: column;
+   }
     
-    #main, aside{  
+    #main{  
         padding: 2%;
-        margin-top: 2%;
+        margin: 2%;
+        border-radius: 20px;
+        padding: 5% 2%;
+    }
+
+    aside{        
+        padding: 4%;
     }
 
     .bloc{
         display: flex;     
         flex-wrap: wrap;   
         padding-top: 5%;
-        width: 100%;
     }
 
     .card-aside{        
-        max-width: 350px;
+        max-width: 330px;
         min-width: 200px;
-        margin-top: 3%;
+        margin: 4%;        
     }
 
     #activite-1,
@@ -707,7 +700,7 @@ footer li{
         margin: 0% 20%;
     }
     .card{
-        margin:5%;
+        margin:3%;
     }
 
     .fort{
@@ -720,6 +713,15 @@ footer li{
     .far{
         padding-top: 2px;
         padding-left: 12px;
+    }
+
+    
+    .menu h3{
+        font-size: 20px;
+    }
+
+    .menu a{
+    font-size: 18px;
     }
 }
 
