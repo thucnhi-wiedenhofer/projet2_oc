@@ -13,7 +13,7 @@
 }
 
 body{
-  /*  background-image: url('/ressources/images/booki_desktop.png');   */
+    background-image: url('/ressources/images/booki_desktop.png');   
 }
 
 :root {
@@ -168,10 +168,30 @@ input, button, span, h3{
   
   /* Filtres css */
 
+#filtres{
+    padding-left: 9px;           
+    display: flex;        
+    align-items: flex-start;
+    font-size: 25px;         
+}
+
+#filtres span{
+    padding-top: 20px;
+}
+
+#filtres .row{
+    margin-left: 29px;    
+}
+
+.filter{
+    padding: 2px 0px 1px 0px;
+    margin: 0px 16px 0px 17px;    
+}
+
 .btn{
     border: 2px solid var(--dk-grey);
     border-radius: 50px;
-    padding:18px 25px 15px 80px;       
+    padding: 18px 26px 16px 80px;       
     display:flex;
     cursor: pointer;
     transition-duration: 0.4s;
@@ -199,6 +219,7 @@ input, button, span, h3{
     align-items: center;
     border: 2px solid var(--blue-light);
   }
+
   
 .fas{
       font-size: 25px;
@@ -505,7 +526,7 @@ footer li{
 
 
 /* pour les ordinateurs */
-@media all and (min-width: 992px)
+@media all and (min-width: 993px)
 {
     h1{
         line-height: 0.4;
@@ -520,30 +541,12 @@ footer li{
     border-top: 4px var(--blue) solid;
     padding-top: 6.4vh;  
     }  
-
     
 
     #search-icon{
         display: none;
      }
      
-    #filtres{
-        padding-left: 9px;     
-        display: flex;        
-        align-items: center;
-        font-size: 25px;         
-    }
-
-    #filtres .row{
-        margin-left: 29px;
-        justify-content: space-around;
-        width: 65.4%;
-    }
-    
-    .filter{
-        padding: 1.9px 0px;    
-    }
-
     .info{
         flex-wrap: wrap;  
         align-items: center; 
@@ -646,8 +649,42 @@ footer li{
     
 }
 
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 993px et 1420px 
+@media all and (min-width: 993px) and (max-width: 1420px){
+    #hebergements{
+        flex-direction: column;
+        margin:auto;
+    }
 
+    #main:nth-child(1)
+    {
+        order: 2; 
+        margin-right: 1%;       
+        margin-left: 1%;  
+    }
+    aside:nth-child(2)
+    {
+        order: 1;
+        margin-right: 1%;       
+        margin-left: 1%;   
+        padding: 5%;
+    }
 
+    .bloc{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-aside{
+        max-width: 400px;
+    }
+    .card-top{
+        max-width: 300px ;
+        margin: 1%;
+    }
+
+}
+
+*/
 
 
 /* pour les tablettes */
