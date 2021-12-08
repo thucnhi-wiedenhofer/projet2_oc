@@ -6,7 +6,6 @@
     --dk-grey: #d9d9d9;
   }
   
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -14,12 +13,12 @@
     padding:0;
     font-family: 'Raleway', sans-serif;
     font-size: 21px; 
-    font-weight: 450;    
+    font-weight: 500;    
     
 }
 
 body {
-  /* background-image: url('/ressources/images/booki_desktop.png'); */  
+ /*  background-image: url('/ressources/images/booki_desktop.png');  */
     width: 100%;
 }
 
@@ -32,7 +31,7 @@ body {
 }
 
 h1 {
-    font-size: 29.1px;
+    font-size: 29.2px;
     font-weight: 700;
     padding-bottom: 2px;
 }
@@ -119,7 +118,7 @@ input, button, span, h3 {
 #here {
     background-color: var(--grey);
     color: black;
-    border-radius:  20px 0 0 20px;       
+    border-radius:  20% 0 0 20%;       
     padding: 20px 27px;
     position: relative;
     left: 3px;
@@ -161,7 +160,6 @@ input, button, span, h3 {
   /* Filtres css */
 
 #filtres {
-    padding-left: 9px;           
     display: flex;        
     align-items: flex-start;
     font-size: 25px;         
@@ -169,10 +167,6 @@ input, button, span, h3 {
 
 #filtres span {
     padding-top: 20px;
-}
-
-#filtres .row {
-    margin-left: 29px;    
 }
 
 .filter {
@@ -200,7 +194,7 @@ input, button, span, h3 {
 
 .round-icon {      
     padding: 20px;
-    border-radius: 50px;
+    border-radius: 50%;
     background-color: var(--blue-light);
     position: absolute;  
     display: flex;        
@@ -223,9 +217,6 @@ input, button, span, h3 {
     display: flex; 
 }
 
-.info p {
-    padding-left: 18px;
-}
 
 .info-icon {
     font-size: 30px;
@@ -530,11 +521,25 @@ footer li {
     #search-icon {
         display: none;
      }
+
+    #filtres {
+        padding-left: 9px;
+        align-items: center;   
+    }
+
+    #filtres .row {
+        margin-left: 29px;    
+    }  
      
     .info {
         flex-wrap: wrap;  
         align-items: center; 
     }
+
+    .info p {
+        padding-left: 18px;
+    }
+    
 
     #hebergements {
         margin-right: 2.7%; 
