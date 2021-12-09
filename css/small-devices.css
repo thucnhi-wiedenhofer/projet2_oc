@@ -3,8 +3,8 @@
 
  body {
     width: 375px;
-    
-   background-image: url('/ressources/images/ip_2.png');
+   
+  /* background-image: url('/ressources/images/ip_3.png');*/
     background-repeat: no-repeat;
     
   }
@@ -23,7 +23,7 @@
     }
        
     h4 {
-        font-size: 20px;
+        font-size: 2.4vh;
         font-weight: 700;        
     } 
 
@@ -47,6 +47,8 @@
         font-weight: 800;
     }
 
+
+    /* header css pour mobiles*/
     header {                
         flex-direction: column;
         text-align: center;
@@ -80,6 +82,14 @@
     
     .a-right {
         padding-right: 0.8vw; 
+    }
+
+
+    /* section id recherche pour mobiles  */
+
+    #recherche {       
+        padding-right: 2.5vw; 
+        width: 100vw;          
     }
 
     .form-group {
@@ -116,6 +126,8 @@
     #search-word {
        display: none;      
     }   
+
+    /* sections id filtres css pour mobiles*/
         
     #filtres {
         flex-direction: column;
@@ -140,18 +152,29 @@
         margin-bottom: -0.4vh;
     }
 
+
+    /*section class info css pour mobiles*/
+
     .info {
-        padding-top: 4.7vh;
+        padding-top: 4vh;
+        align-items: baseline;        
     }
 
-    .info-icon {
-        align-items: baseline;      
+    .info .fas {
+        font-size: 1.8vh;
     }
 
-    
+    .info-icon {  
+        height: 4vh;   
+    }
 
+    .info p {
+        padding-left: 1.2vw;
+        line-height: 3vh;
+    }   
     
-
+    
+ /*section id hébergement css pour mobiles */
     #hebergements {
         flex-direction: column;
         width: 100vw;
@@ -165,18 +188,69 @@
 
     aside:nth-child(2) {
         order: 1;
-        background-color: var(--grey); 
-        width: 100%;
-        padding: 5%;
     }
 
+    .fa-star {
+        margin-top: 2vh;
+        font-size: 1.85vh;
+    }
+    
     .card-top {
         width: 600px;
     }
 
-    .card-aside {
-        margin: 5%;
+/*section id popular css pour mobiles */
+
+    aside {
+        width: 100%;
+        padding: 5.5%;
+        margin-top: 6.4%;
     }
+
+    #popular {
+        margin-bottom: 1.4vh;
+    }
+
+    .fa-chart-line {
+        font-size: 3.3vh;
+    }
+
+    .card-aside {
+        height: 21.5vh;
+        margin-top: 4%;        
+    }
+
+    .soleil {
+        height: 0vh;
+        width: 60vw;
+              
+    }
+
+    .coeur {
+        height: 0vh;
+        width: 60vw;       
+    }
+
+    .blanc {
+        height: 0vh;
+        width: 60vw;
+    }
+    
+    .description {
+        padding-left: 4.5%;
+        padding-top: 7.7%;
+        width: 80vw
+    }
+
+    
+    .description p {
+        font-size: 2.05vh;
+        margin-left: 0%;
+        margin-top: 5.2%;
+        margin-bottom: 7.5%;
+    }
+        
+/*section id activités css pour mobiles */
 
     #activites {
         margin-top: 7%;
@@ -192,7 +266,10 @@
     .card {        
         width: 350px;
         margin: 3%;
-    }    
+    }  
+    
+    
+  /* footer css pour mobiles */
 
     footer {
         flex-direction: column; 

@@ -18,7 +18,7 @@
 }
 
 body {
- /*  background-image: url('/ressources/images/booki_desktop.png');  */
+  /*background-image: url('/ressources/images/booki_desktop.png'); */
     width: 100%;
 }
 
@@ -94,7 +94,7 @@ a:hover {
 }
 
 
-/* section recherche  css */
+/* section id recherche  css */
 
 #recherche {
     padding-left: 3.8vw;  
@@ -157,7 +157,7 @@ input, button, span, h3 {
     opacity: 0.8;
   } 
   
-  /* Filtres css */
+  /* sections id filtres css */
 
 #filtres {
     display: flex;        
@@ -205,11 +205,12 @@ input, button, span, h3 {
     align-items: center;
     border: 2px solid var(--blue-light);
   }
-
   
 .fas {
       font-size: 25px;
   }
+
+/*section class info css */
 
 .info {
     padding-top: 49px;
@@ -217,19 +218,18 @@ input, button, span, h3 {
     display: flex; 
 }
 
-
-.info-icon {
-    font-size: 30px;
-    background-color:var(--blue);
-    color:white;
+.info-icon {         
     border: 2px var(--dk-grey) solid;
     border-radius: 50%;    
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
+    color: var(--blue);
+    width: 30px;
+    height: 30px;    
 }
 
-  /*section hébergement css */
+  /*section id hébergements css */
 
 #hebergements {
     display: flex;    
@@ -311,7 +311,7 @@ cursor: pointer;
 }
 
 
-/*section popular css */
+/*section id popular css */
 
 aside {   
     background-color: var(--grey); 
@@ -346,9 +346,7 @@ aside {
 
 .img-left {
     display: flex;
-    border-radius: 20px 0px 0px 20px; 
-    width: 185px;    
-    height: 180px;    
+    border-radius: 20px 0px 0px 20px;         
     overflow: hidden;   
 }
 
@@ -362,6 +360,11 @@ aside {
     height: 190px;
     width: 185px;
     object-position: 65% 50%;
+}
+
+.blanc {
+    height: 190px;
+    width: 185px;
 }
 
 .none {
@@ -381,7 +384,7 @@ aside {
 }
 
 
-/*section activités css */
+/*section id activités css */
 
 #activites {
     padding-top: 1.4%;
@@ -536,8 +539,17 @@ footer li {
         align-items: center; 
     }
 
+    .info .fas {
+        font-size: 15px;
+    }
+
+    .info-icon {     
+        width: 30px;
+        height: 30px;    
+    }
+
     .info p {
-        padding-left: 18px;
+        padding-left: 17px;
     }
     
 
@@ -554,6 +566,11 @@ footer li {
     
     .radius {    
         border-radius: 25px;
+    }
+
+    .img.left {
+        width: 200px;    
+        height: 180px;
     }
 
     .card-aside {        
