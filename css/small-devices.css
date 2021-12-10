@@ -221,25 +221,25 @@
     }
 
     .soleil {
-        height: 0vh;
-        width: 60vw;
-              
+        height: 20vh;
+        width: 40vw;
+        object-position: 70% 50%;      
     }
 
     .coeur {
-        height: 0vh;
-        width: 60vw;       
+        height: 21vh;
+        width: 60vw;  
+        object-position: 100% 50%;       
     }
 
     .blanc {
-        height: 0vh;
-        width: 60vw;
+        height: 19vh;
+        width: 40vw;
     }
     
     .description {
         padding-left: 4.5%;
         padding-top: 7.7%;
-        width: 80vw
     }
 
     
@@ -248,6 +248,10 @@
         margin-left: 0%;
         margin-top: 5.2%;
         margin-bottom: 7.5%;
+    }
+
+    .bloc {
+        margin-bottom: 5%;
     }
         
 /*section id activités css pour mobiles */
