@@ -18,7 +18,7 @@
 }
 
 body {
- /* background-image: url('/ressources/images/booki_desktop.png');*/
+ /*background-image: url('/ressources/images/booki_desktop.png');*/
     width: 100%;
 }
 
@@ -237,22 +237,19 @@ input, button, span, h3 {
     margin-bottom: 3.2%;        
 }
 
-#main {
-   background-color:var(--grey); 
-}
 
 #main .row {
     justify-content: space-around;
 }
 
 #main h2 {
-    margin-top: 0.4%;
-    margin-left: 1.9%;
+    margin-top: 1%;
+    margin-left: 2%;
 }
 
 #main h3 {
     margin-top: 3.4%;
-    margin-left: 2.4%;
+    margin-left: 2.5%;
 }
 
 .fa-star {
@@ -282,7 +279,7 @@ cursor: pointer;
 .img-top {
     display:flex;
     border-radius: 20px 20px 0px 0px ;
-    height: 150px;     
+    height: 160px;     
     overflow: hidden;   
     filter: grayscale(0);
     transition-property: filter; 
@@ -291,7 +288,7 @@ cursor: pointer;
 }
 
 .cover {
-    height:150px;
+    height:160px;
     width: 400px;   
     object-fit: cover;
 }
@@ -300,11 +297,16 @@ cursor: pointer;
 .card-body {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    height: 100px;
-    padding-left: 5%;    
+    align-items: flex-start;     
+    padding-left: 5%; 
+    padding-top: 2%;   
 }
+
+.card-body p{      
+    padding-bottom: 4%; 
+    padding-top: 2%;   
+}
+
 
 
 /*section id popular css */
@@ -384,12 +386,9 @@ aside {
     padding-right: 2.6%;        
 }
 
-#activites .row {
-    justify-content: space-around;
-}
-
 #activites h2 {
     justify-content: space-between ;
+    padding-left: 2.5%;    
 }
 
 
@@ -555,12 +554,13 @@ footer li {
         font-size: 19px;
     }
 
-     
+         
     #main {
         padding: 2.5% 2% 2.9% 1.8%;
         margin-top: 2.6%;
-        margin-left: 3.7%;
-        margin-right: 2.4%;
+        margin-left: 3.5%;
+        margin-right: 2.9%;
+        background-color:var(--grey);
     }
     
     .radius {    
@@ -580,6 +580,10 @@ footer li {
         width: 300px;
     }
 
+    #activites .row {
+        justify-content: space-around;
+    }
+    
     .xtall {
         height: 592px;        
               
