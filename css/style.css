@@ -1,3 +1,4 @@
+/* CSS général , all devices */
 
 :root {
     --blue: #0065FC;
@@ -42,7 +43,7 @@ h2 {
 }
 
 h4 {
-    font-size: 21.4px;
+    font-size: 20px;
     font-weight: 700;    
 } 
 
@@ -274,7 +275,7 @@ cursor: pointer;
 .card-top:hover {     
     filter: grayscale(1);
     box-shadow:  0 4px 16px 0 rgba(0, 0, 0, 0.699);
-  }
+}
 
 .img-top {
     display:flex;
@@ -333,10 +334,10 @@ aside {
     text-align: start;
     background-color: #ffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.048);
-    max-width: 455px;
-    min-width: 400px;
+    max-width: 450px;
+       
     height: 192px;    
-    margin-top: 7%;  
+    margin: 7%;  
     border-radius: 25px;
     border: 5px #ffff solid; 
     cursor: pointer;  
@@ -364,7 +365,6 @@ aside {
     height: 190px;
     width: 185px;
 }
-
 
 .description {
     display: flex;
@@ -475,8 +475,8 @@ footer {
     margin-top: 3%;       
 }
 
-.menu {
-    width:32%;
+.menu {   
+    margin-right: auto;  
 }
 
 
@@ -487,7 +487,7 @@ footer {
 
 footer li {
     list-style-type: none; /* Remove bullets */
-    padding-top: 3.3%;    
+    padding-top: 3.3%;   
 }
 
 
@@ -514,6 +514,8 @@ footer li {
         padding-top: 61px;  
     }
 
+    /* section id recherche  pour ordinateurs */
+
     #search-icon {
         display: none;
      }
@@ -532,7 +534,7 @@ footer li {
         align-items: center; 
     }
 
-    .info .fas {
+    .fa-info {
         font-size: 15px;
     }
 
@@ -545,7 +547,7 @@ footer li {
         padding-left: 17px;
     }
     
-
+/* section id hebergements  pour ordinateurs */
     #hebergements {
         margin-right: 2.4%; 
     }
@@ -553,7 +555,6 @@ footer li {
     #hebergements p {
         font-size: 19px;
     }
-
          
     #main {
         padding: 2.5% 2% 2.9% 1.8%;
@@ -572,13 +573,11 @@ footer li {
         height: 180px;
     }
 
-    .card-aside {        
-    margin-bottom: 10%;  
-    }
-
     .description {
         width: 300px;
     }
+
+    /* section id activités  pour ordinateurs */
 
     #activites .row {
         justify-content: space-around;
@@ -655,6 +654,11 @@ footer li {
         margin: 5.5%;
     }
 
+/*section footer pour ordinateurs */
+    .menu {
+        width:30%;
+    }
+
     .far {
         padding-top: 2px;
         padding-left: 7px;
@@ -673,6 +677,14 @@ footer li {
 
 /* pour les tablettes */
 @media all and (max-width: 992px) {
+
+    /*section header pour tablettes */
+
+    
+    p, .card-body p {
+        font-size: 17px;
+    }
+
     header {
         justify-content: space-evenly;        
     }
@@ -687,6 +699,13 @@ footer li {
         width:50%;
     }     
     
+    /*section id recherche pour tablettes */
+
+    input, button, span, h3 {
+        font-size: 20px;
+        font-weight: 700;    
+    }
+    
     #search-word {
         display: none;
      }
@@ -694,6 +713,21 @@ footer li {
     .filter {
         margin:7px;
     }
+
+    .round-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .fas {
+        font-size: 20px;
+    }
+
+    .fa-info, .fa-star {
+        font-size: 13px;
+    }
+
+     /*section id hébegements pour tablettes */
 
    #hebergements {
        flex-direction: column;
@@ -719,7 +753,14 @@ footer li {
         max-width: 330px;
         min-width: 200px;               
     }
+
     
+    /*section id activités pour tablettes */
+
+    #activites .row {
+        margin: auto;
+    }
+
     .card {        
         max-width: 330px;
     }
@@ -727,22 +768,28 @@ footer li {
     .fort {
         height: 250px;
     }
+
     .tall h4 {
         margin: 5%;
     }
+
+    .column {
+        max-height: 595px;
+    }
+
+     /*section footer pour tablettes */
 
     .far {
         padding-top: 2px;
         padding-left: 12px;
     }
-
     
     .menu h3 {
         font-size: 20px;
     }
 
     .menu a {
-    font-size: 18px;
+    font-size: 17px;
     }
 }
 

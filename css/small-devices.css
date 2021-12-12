@@ -1,14 +1,6 @@
 /* pour les smartphones */
 @media all and (max-width: 767px) {
 
- body {
-    width: 375px;
-   
-   background-image: url('/ressources/images/ip_5.png');
-    background-repeat: no-repeat;
-    
-  }
-
     h1 {
         margin-top: 3vh;
         margin-bottom: 1.9vh;
@@ -255,13 +247,13 @@
     }
 
     .coeur {
-        height: 21vh;
+        height: 20vh;
         width: 60vw;  
         object-position: 100% 50%;       
     }
 
     .blanc {
-        height: 19vh;
+        height: 20vh;
         width: 40vw;
     }
     
@@ -329,8 +321,8 @@
         justify-content: space-between;
         align-items: flex-start;
         width: 100%;  
-        margin-top: 5%;   
-        padding: 5%;  
+        margin-top: 5%; 
+        padding: 5% 5% 10% 5%;  
     }
 
     .menu {
