@@ -16,7 +16,7 @@
        
     h4 {
         font-size: 2.4vh;
-        font-weight: 700;        
+        font-weight: 800;        
     } 
 
     p {
@@ -143,7 +143,7 @@
     }
         
     .filter-button {    
-        padding: 2.3vh 3.8vw 2vh 16vw;
+        padding: 2.3vh 3.8vw 1.8vh 16vw;
         margin-bottom: -0.4vh;
     }
 
@@ -216,6 +216,7 @@
 
     .card-body p {
         padding-bottom: 3%;
+        font-size: 2.05vh;
     }
 
     
@@ -240,6 +241,11 @@
         margin-top: 4%;        
     }
 
+    .img-left {
+        height: 20vh;
+        width: 40vw;
+    }
+
     .soleil {
         height: 20vh;
         width: 40vw;
@@ -248,7 +254,7 @@
 
     .coeur {
         height: 20vh;
-        width: 60vw;  
+        width: 40vw;  
         object-position: 100% 50%;       
     }
 
@@ -260,6 +266,7 @@
     .description {
         padding-left: 4.5%;
         padding-top: 7.7%;
+        width: 60vw;
     }
 
     

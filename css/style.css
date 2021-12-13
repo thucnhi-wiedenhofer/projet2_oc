@@ -19,8 +19,7 @@
 }
 
 body {
- /*background-image: url('/ressources/images/booki_desktop.png');*/
-    width: 100%;
+     width: 100%;
 }
 
 .blue {
@@ -314,14 +313,15 @@ cursor: pointer;
 
 aside {   
     background-color: var(--grey); 
-    padding-left: 2.8%;
+    padding-left: 2.5%;
     padding-top: 2.8%;
-    padding-right: 2.8%;
-    margin-top: 2.6%;   
+    padding-right: 2.5%;
+    margin-top: 2.9%;   
 }
 
 #popular {   
     justify-content: space-between;
+    padding: 0% 2% ;
 }
 
 .fa-chart-line {
@@ -334,10 +334,9 @@ aside {
     text-align: start;
     background-color: #ffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.048);
-    max-width: 450px;
-       
+    max-width: 475px;       
     height: 192px;    
-    margin: 7%;  
+    margin: 7% 2%;  
     border-radius: 25px;
     border: 5px #ffff solid; 
     cursor: pointer;  
@@ -346,7 +345,7 @@ aside {
 .img-left {
     display: flex;
     border-radius: 20px 0px 0px 20px;         
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 .soleil {
@@ -356,14 +355,15 @@ aside {
 }
 
 .coeur {
-    height: 190px;
+    height: 185px;
     width: 185px;
-    object-position: 65% 50%;
+    object-position: 70% 50%;
 }
 
 .blanc {
-    height: 190px;
+    height: 185px;
     width: 185px;
+    object-position: 50% 35%;
 }
 
 .description {
@@ -371,12 +371,8 @@ aside {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    padding: 6%;
+    padding: 6% 6% 0% 6%;
 }
-.description span {
-    padding-top: 10%;
-}
-
 
 /*section id activités css */
 
@@ -568,11 +564,6 @@ footer li {
         border-radius: 25px;
     }
 
-    .img.left {
-        width: 200px;    
-        height: 180px;
-    }
-
     .description {
         width: 300px;
     }
@@ -701,6 +692,10 @@ footer li {
     
     /*section id recherche pour tablettes */
 
+    #recherche {
+        padding-left: 6%;
+    }
+
     input, button, span, h3 {
         font-size: 20px;
         font-weight: 700;    
@@ -725,6 +720,14 @@ footer li {
 
     .fa-info, .fa-star {
         font-size: 13px;
+    }
+
+    .info {
+        flex-wrap: wrap;  
+        align-items: center; 
+    }
+    .info p {
+        padding-left: 10px;
     }
 
      /*section id hébegements pour tablettes */
@@ -754,8 +757,16 @@ footer li {
         min-width: 200px;               
     }
 
+    .description {
+        width: 240px;
+    }
+
     
     /*section id activités pour tablettes */
+
+    #activites {
+        padding-left: 4%;
+    }
 
     #activites .row {
         margin: auto;
@@ -779,17 +790,21 @@ footer li {
 
      /*section footer pour tablettes */
 
+     footer {
+         padding: 6%;
+     }
+
     .far {
         padding-top: 2px;
         padding-left: 12px;
     }
     
     .menu h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .menu a {
-    font-size: 17px;
+    font-size: 16px;
     }
 }
 
