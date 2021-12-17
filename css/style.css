@@ -190,6 +190,8 @@ input, button, span, h3 {
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.171), 0 17px 50px 0 rgba(0, 0, 0, 0.199);
     opacity: 0.8;
+    position: relative;
+    z-index: 1;
   }
 
 .round-icon {      
@@ -197,6 +199,7 @@ input, button, span, h3 {
     border-radius: 50%;
     background-color: var(--blue-light);
     position: absolute;  
+    z-index: 2;
     display: flex;        
     color: var(--blue);
     width: 66px;
