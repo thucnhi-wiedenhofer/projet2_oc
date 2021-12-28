@@ -13,14 +13,11 @@
     margin:0;
     padding:0;
     font-family: 'Raleway', sans-serif;
-    font-size: 21px; 
-    font-weight: 500;    
+    font-size: 17.1px; 
+    font-weight: 400;    
     
 }
 
-body {
-     width: 100%;
-}
 
 .blue {
     color: var(--blue);
@@ -31,18 +28,18 @@ body {
 }
 
 h1 {
-    font-size: 29.2px;
-    font-weight: 700;
+    font-size: 23.4px;
+    font-weight: bold;
     padding-bottom: 2px;
 }
   
 h2 {
-    font-size: 29.1px;
+    font-size: 23.5px;
     font-weight: bold;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 700;    
 } 
 
@@ -54,15 +51,16 @@ h4 {
 
 
 /* header css */
-header {    
-    height: 150px;
+
+header {  
     display: flex;        
     flex-wrap: wrap;      
     box-sizing: border-box;             
 }  
 
+
 .navbar {
-    width:447px;
+    width: 372px;
     margin-top: 0%;
     display: flex;      
 }
@@ -73,8 +71,8 @@ a {
     flex-grow: 1;
     flex-basis: 0;   
     text-align: center;
-    font-size: 21px; 
-    font-weight: 450;
+    font-size: 17.2px; 
+    font-weight: 400;
 }
 
 a:hover {
@@ -82,7 +80,7 @@ a:hover {
 }   
 
 .navbar a {
-    padding-top: 65px;
+    padding-top: 52px;
 }
   
 .a-left {
@@ -90,50 +88,48 @@ a:hover {
 }
 
 .a-right {
-    padding-right: 22px; 
+    padding-right: 32px; 
 }
 
 
 /* section id recherche  css */
 
 #recherche {
-    padding-left: 3.8vw;  
-    width: 96.5vw;
-    padding-top: 1.3vh;   
+    padding-left: 59px;        
+    padding-top: 2.8px;
 }
 
 input, button, span, h3 {
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 700;    
 }
 
 .form-group {
     display:flex;
     align-items: center;    
-    margin-top: 2.8vh;
-    margin-bottom: 4.1vh; 
+    margin-top: 19px;
+    margin-bottom: 31px; 
        
 }
 
 #here {
     background-color: var(--grey);
     color: black;
-    border-radius:  20% 0 0 20%;       
-    padding: 20px 27px;
-    position: relative;
-    left: 3px;
+    border-radius:  25% 0 0 25%;       
+    padding: 17px 20px;
+    float:left;
     outline: none;
     border: none;
 }
 
 
 .search input {    
-    padding: 20px 10px ;
-    border-top: 1px solid var(--grey);
+    padding: 15px 16px ;
+    border-top: 2px solid var(--grey);
     border-right: none;
-    border-bottom: 1px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
     border-left: none;
-    
+    position: relative;
 }
 
 .search ::placeholder {
@@ -142,11 +138,11 @@ input, button, span, h3 {
 
 #bouton {
     background-color: var(--blue);
-    border-radius: 0 21px 21px 0;
+    border-radius: 0 16px 16px 0;
     color: white;    
-    padding: 21px 22px;
+    padding: 17px 18px;
     position: relative;
-    right: 6px;
+    right: 8px;
     outline: none;
     border: none;
     cursor: pointer;    
@@ -171,13 +167,13 @@ input, button, span, h3 {
 
 .filter {
     padding: 2px 0px 1px 0px;
-    margin: 0px 16px 0px 17px;    
+    margin: 0px 10px 0px 13px;    
 }
 
 .filter-button {
     border: 2px solid var(--dk-grey);
     border-radius: 50px;
-    padding: 18px 26px 16px 80px;       
+    padding: 14px 24px 14px 65px;       
     display:flex;
     cursor: pointer;
     transition-duration: 0.4s;
@@ -202,22 +198,22 @@ input, button, span, h3 {
     z-index: 2;
     display: flex;        
     color: var(--blue);
-    width: 66px;
-    height: 66px;
+    width: 55px;
+    height: 55px;
     justify-content: center;
     align-items: center;
     border: 2px solid var(--blue-light);
   }
   
 .fas {
-      font-size: 25px;
+      font-size: 20px;
   }
 
 /*section class info css */
 
 .info {
-    padding-top: 48px;
-    padding-left: 7px;
+    padding-top: 36px;
+    padding-left: 4px;
     display: flex; 
 }
 
@@ -228,8 +224,6 @@ input, button, span, h3 {
     justify-content: center;
     align-items: center;
     color: var(--blue);
-    width: 30px;
-    height: 30px;    
 }
 
   /*section id hébergements css */
@@ -237,39 +231,37 @@ input, button, span, h3 {
 #hebergements {
     display: flex;    
     justify-content: space-between;    
-    margin-bottom: 3.2%;        
+    margin-bottom: 3.2%;     
 }
-
 
 #main .row {
     justify-content: space-around;
 }
 
 #main h2 {
-    margin-top: 1%;
-    margin-left: 2%;
+    margin-top: 5%;
+    margin-left: 4%;
 }
 
 #main h3 {
-    margin-top: 3.4%;
-    margin-left: 2.5%;
+    margin-top: 2%;
+    margin-left: 4%;
 }
 
 .fa-star {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .card-top {
 display: block;
 background-color: #ffff;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.048);
-max-width: 327px;
-height: 265px;
+height: 215px;
 border-radius: 20px;
 border: 5px #ffff solid;
 margin-top: 2.5%;
-margin-left: 1.5%;
-margin-right: 1.5%;
+margin-left: 1%;
+margin-right: 1%;
 margin-bottom: 1.5%;
 cursor: pointer; 
 }
@@ -281,8 +273,8 @@ cursor: pointer;
 
 .img-top {
     display:flex;
-    border-radius: 20px 20px 0px 0px ;
-    height: 160px;     
+    border-radius: 19px 19px 0px 0px ;
+    height: 125px;     
     overflow: hidden;   
     filter: grayscale(0);
     transition-property: filter; 
@@ -291,18 +283,17 @@ cursor: pointer;
 }
 
 .cover {
-    height:160px;
-    width: 400px;   
+    height: 125px;
+    width: 260px;   
     object-fit: cover;
 }
-
   
 .card-body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;     
     padding-left: 5%; 
-    padding-top: 2%;   
+    padding-top: 4.5%;   
 }
 
 .card-body p{      
@@ -319,16 +310,15 @@ aside {
     padding-left: 2.5%;
     padding-top: 2.8%;
     padding-right: 2.5%;
-    margin-top: 2.9%;   
+    margin-left: 3%;
 }
 
 #popular {   
     justify-content: space-between;
-    padding: 0% 2% ;
 }
 
 .fa-chart-line {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .card-aside {
@@ -337,9 +327,9 @@ aside {
     text-align: start;
     background-color: #ffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.048);
-    max-width: 475px;       
-    height: 192px;    
-    margin: 7% 2%;  
+    width: 100%;      
+    height: 150px;    
+    margin: 9.5% 0%;  
     border-radius: 25px;
     border: 5px #ffff solid; 
     cursor: pointer;  
@@ -352,20 +342,20 @@ aside {
 }
 
 .soleil {
-    height: 185px;
-    width: 185px;
+    height: 140px;
+    width: 133px;
     object-position: 58% 50%;
 }
 
 .coeur {
-    height: 185px;
-    width: 185px;
+    height: 140px;
+    width: 133px;
     object-position: 70% 50%;
 }
 
 .blanc {
-    height: 185px;
-    width: 185px;
+    height: 140px;
+    width: 133px;
     object-position: 50% 35%;
 }
 
@@ -381,8 +371,8 @@ aside {
 
 #activites {
     padding-top: 1.3%;
-    padding-left: 1.2%;
-    padding-right: 2.6%;        
+    padding-left: 2vh;
+    padding-right: 4vh;        
 }
 
 #activites h2 {
@@ -395,7 +385,7 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
-    max-height: 606px;  
+    max-height: 485px;  
     margin-top: 1.3%;
 }
 
@@ -405,8 +395,8 @@ aside {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.048);    
     border-radius: 20px; 
     cursor: pointer;    
-    width: 400px; 
-    margin:1.8%;      
+    width: 320px; 
+    margin:1.4%;      
 }
 
 .card:hover {     
@@ -419,52 +409,56 @@ aside {
 }
 
 .xsmall {
-    height: 216px;    
+    height: 178px;    
 }
 
 .small {
-    height: 258px;    
+    height: 207px;    
 }
 
 .dame {
-    height: 185px;
+    width: 100%;
+    height: 150px;
     object-position: 50% 0%;
 }
 
 .middle {
-    height: 274px;
+    height: 220px;
 }
 
 .parc {
-    height: 200px;
+    width: 100%;
+    height: 160px;
     object-position: 50% 14%;
 }
 
-.x-tall {
-    height: 520px;
+.x-tall {       
+    height: 415px;
 }
 
 .top {
-    height: 520px;
+    width: 100%;
+    height: 415px;
     object-position: 50% 39% ;
 }
 
 .x-small {
-    height: 145px;
+    width: 100%;
+    height: 120px;
     object-position: 50% 19% ;
 }
 
 .xtall {
-    height: 592px;        
-          
+    height: 475px;
 }
 
 .tall {
-    height: 314px;
+    height: 250px;
 }
 
 .fort{
-    height: 240px;
+    width: 100%;
+    height: 190px;
     object-position: 50% 39% ;
 }
 
@@ -482,7 +476,7 @@ footer {
     flex-wrap: wrap; 
     justify-content: space-between;   
     background-color: var(--grey);
-    padding: 3.5%;
+    padding: 2% 3.5%;
     margin-top: 3%;       
 }
 
@@ -492,7 +486,7 @@ footer {
 
 
 .menu h3 {
-    margin-top: 20px;
+    margin-top: 19px;
     margin-bottom: 8px;
 }
 
@@ -504,6 +498,8 @@ footer li {
 
 
 /* pour les ordinateurs */
+
+
 @media all and (min-width: 992px) {
 
     h1{
@@ -513,17 +509,18 @@ footer li {
     header {
         justify-content: space-between;
     } 
-   
+
     .logo {
-        transform: scale(0.68);
-        padding-top: 5.7vh;
-        padding-right: 20vw;
+        transform: scale(0.52);
+        padding-top: 32px;
+        padding-left: 38px;
     }
 
     .navbar a:hover {    
         border-top: 4px var(--blue) solid;
-        padding-top: 61px;  
+        padding-top: 48px;  
     }
+    
 
     /* section id recherche  pour ordinateurs */
 
@@ -532,12 +529,12 @@ footer li {
      }
 
     #filtres {
-        padding-left: 10px;
+        padding-left: 8px;
         align-items: center;   
     }
 
     #filtres .row {
-        margin-left: 27px;    
+        margin-left: 20px;    
     }  
      
     .info {
@@ -550,8 +547,8 @@ footer li {
     }
 
     .info-icon {     
-        width: 30px;
-        height: 30px;    
+        width: 25px;
+        height: 25px;    
     }
 
     .info {
@@ -560,24 +557,24 @@ footer li {
     }
 
     .info p {
-        padding-left: 17px;
+        padding-left: 13px;
     }
     
 /* section id hebergements  pour ordinateurs */
-    #hebergements {
-        margin-right: 2.4%; 
-    }
     
-    #hebergements p {
-        font-size: 19px;
+    .container-fluid {
+        padding: 2.5% 5.5vh 0% 5.5vh;
+  }
+    
+        #hebergements p {
+        font-size: 15px;
     }
          
     #main {
-        padding: 2.5% 2% 2.9% 1.8%;
-        margin-top: 2.6%;
-        margin-left: 3.5%;
-        margin-right: 2.9%;
-        background-color:var(--grey);
+        display: flex;
+        flex-wrap: wrap;        
+        background-color: var(--grey);        
+        padding-bottom: 3%;   
     }
     
     .radius {    
@@ -585,7 +582,7 @@ footer li {
     }
 
     .description {
-        width: 300px;
+        width: 200px;
     }
 
     /* section id activités  pour ordinateurs */
@@ -594,9 +591,7 @@ footer li {
         justify-content: space-around;
     }
     
-      
     
-
 /*section footer pour ordinateurs */
     .menu {
         width:30%;
@@ -612,11 +607,27 @@ footer li {
     }
 
     .menu a {
-        font-size: 21px;
+        font-size: 17px;
     }
     
 }
 
+@media (min-width: 1538px) {
+/*   body {       
+        width: 1538px;
+        margin: 0 auto;
+        background-image: url('/images/Desktop\ -\ 2.png');  
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 50% 0%; 
+    }*/
+
+    body {
+        width: 100%;
+        max-width: 1538px;
+        margin: 0 auto;
+      }
+}
 
 /* pour les tablettes */
 @media all and (max-width: 992px) {
@@ -625,7 +636,7 @@ footer li {
 
     
     p, .card-body p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     header {
@@ -633,26 +644,31 @@ footer li {
     }
     
     .logo {
-    transform: scale(0.68);
-    padding-top: 5vh;
+    transform: scale(0.50);
+    padding-top: 2vh;
     padding-right: 20vw;
     }
 
     .navbar {
         width:50%;
-    }     
+    }  
+    
+    .navbar a:hover {    
+        border-top: 4px var(--blue) solid;
+        padding-top: 48px;  
+    }
     
     /*section id recherche pour tablettes */
 
     #recherche {
-        padding-left: 6%;
+        padding-left: 8%;
     }
 
     input, button, span, h3 {
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 700;    
     }
-    
+       
     #search-word {
         display: none;
      }
@@ -661,17 +677,22 @@ footer li {
         margin:7px;
     }
 
-    .round-icon {
-        width: 60px;
-        height: 60px;
+    .fas {
+        font-size: 15px;
     }
 
-    .fas {
-        font-size: 20px;
+    .round-icon{
+        width: 51px;
+        height: 51px
     }
 
     .fa-info, .fa-star {
         font-size: 13px;
+    }
+
+    .info-icon {     
+        width: 25px;
+        height: 25px;    
     }
 
     .info {
@@ -691,12 +712,20 @@ footer li {
     #main {  
         padding: 2%;
         margin: 2%;
-        border-radius: 20px;
-        padding: 5% 2%;
+        border-radius: 20px;        
+    }
+
+    #popular{
+        margin: 3%;
+    }
+
+    .fa-chart-line {
+        font-size: 25px;
     }
 
     aside {        
-        padding: 4%;
+        padding: 6%;
+        margin-left: 0%;
     }
 
     .bloc {
@@ -705,8 +734,8 @@ footer li {
     }
 
     .card-aside {        
-        max-width: 330px;
-        min-width: 200px;               
+        width: 310px; 
+        margin: 3%;              
     }
 
     .description {
@@ -717,11 +746,11 @@ footer li {
     /*section id activités pour tablettes */
 
     #activites {
-        padding-left: 4%;
+        padding-left: 6%;
     }
 
-    #activites .row {
-        margin: auto;
+    #activites h2{
+        padding-bottom: 2%;
     }
 
     .card {        
@@ -749,11 +778,11 @@ footer li {
     }
     
     .menu h3 {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .menu a {
-    font-size: 16px;
+    font-size: 15px;
     }
 }
 
