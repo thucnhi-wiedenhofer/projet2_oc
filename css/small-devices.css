@@ -249,6 +249,11 @@
         width: 35vw;
     }
 
+    .img-left {
+        height: 20vh;
+        width: 40vw;
+    }
+
     .soleil {
         height: 20vh;
         width: 40vw;
@@ -269,7 +274,7 @@
     .description {
         padding-left: 4.5%;
         padding-top: 7.7%;
-        width: 50vw;
+        width: 60vw;
     }
 
     
